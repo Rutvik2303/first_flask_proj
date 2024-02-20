@@ -5,7 +5,7 @@ tocken="123456"
 prd_lst=['prd1','prd2']
 
 @app.route("/",methods=['GET', 'POST'])
-def hello_world():
+def login():
     crad= request.json
     crad_keys=crad.keys()
     if ("email" and "password" in crad_keys):
